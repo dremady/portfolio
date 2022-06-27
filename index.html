@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Portfolio</title>
+    <style>
+      :root {
+        box-sizing: border-box;
+        background: white url(assets/background-2x.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: sans-serif;
+        font-size: 14pt;
+        color: black;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: inherit;
+      }
+
+      body {
+        margin: auto;
+        max-width: 1440px;
+      }
+
+      h1 {
+        color: firebrick;
+        margin: 0;
+      }
+
+      /*** ***/
+      .glass {
+        margin: 10px;
+        padding: 10px;
+        background: #fff3;
+        border-radius: 5px;
+        box-shadow: 5px 5px 10px #0007;
+        backdrop-filter: blur(10px);
+      }
+      .hero {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: stretch;
+        align-items: stretch;
+        gap: 10px;
+      }
+
+      .hero > img,
+      .hero > div {
+        width: 250px;
+        height: 25vh;
+        flex-grow: 1;
+      }
+
+      .hero > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      figure {
+        border: 10px white solid;
+        box-shadow: 0 0 10px #0007;
+        margin: 10px;
+        width: 240px;
+        height: 240px;
+        position: relative;
+        border-radius: 50%;
+        overflow: hidden;
+        transition: all ease 600ms;
+        position: relative;
+      }
+      figure::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-radius: inherit;
+        box-shadow: inset 0 0 10px #0007;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      figcaption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #000a;
+        color: white;
+        padding: 10px;
+        opacity: 0;
+        transition: all ease 1s;
+      }
+
+      a:hover figure,
+      a:focus figure {
+        /* transform: rotate(360deg); /**/
+        border-radius: 0%;
+      }
+
+      a:hover figure figcaption,
+      a:focus figure figcaption {
+        opacity: 1;
+      }
+
+      .spacer {
+        flex-grow: 1;
+        border: none;
+      }
+
+      .button {
+        background: firebrick;
+        color: ghostwhite;
+        padding: 10px 20px;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero glass">
+      <img src="https://picsum.photos/id/237/200/300" alt="" />
+      <div>
+        <h1>Porte Folio</h1>
+        <p>Tacticienne du dessin</p>
+        <hr class="spacer" />
+        <a class="button" href="mailto:madelinelemaitrelenne@gmail.com"
+          >Contactez-moi</a
+        >
+      </div>
+    </header>
+    <main class="glass">
+      <a href="./assets/Nouveau projet.mp4">
+        <figure>
+          <img src="./qtori bode.svg" alt="" />
+          <figcaption>image du storyborde de lanimation</figcaption>
+        </figure>
+      </a>
+      <a href="./assets/1656319779249.jpg">
+        <figure>
+          <img src="./assets/1656319779249.jpg" alt="" />
+          <figcaption>image du storyborde de lanimation xD un bras</figcaption>
+        </figure>
+      </a>
+      <a href="./assets/1656319800224.jpg">
+        <figure>
+          <img src="./assets/1656319800224.jpg" alt="" />
+          <figcaption>image du storyborde de lanimation xD un bras</figcaption>
+        </figure>
+      </a>
+      <a href="./assets/1656319807609.jpg">
+        <figure>
+          <img src="./assets/1656319807609.jpg" alt="" />
+          <figcaption>image du storyborde de lanimation xD un bras</figcaption>
+        </figure>
+      </a>
+      <a href="./assets/1656319884040.png">
+        <figure>
+          <img src="./assets/1656319884040.png" alt="" />
+          <figcaption>image du storyborde de lanimation xD un bras</figcaption>
+        </figure>
+      </a>
+      <a href="./assets/1656319934399.jpg">
+        <figure>
+          <img src="./assets/1656319934399.jpg" alt="" />
+          <figcaption>image du storyborde de lanimation xD un bras</figcaption>
+        </figure>
+      </a>
+      <a href="./assets/1656319965038.png">
+        <figure>
+          <img src="./assets/1656319965038.png" alt="" />
+          <figcaption>image du storyborde de lanimation xD un bras</figcaption>
+        </figure>
+      </a>
+      <a href="./assets/1656319995335.jpg">
+        <figure>
+          <img src="./assets/1656319995335.jpg" alt="" />
+          <figcaption>image du storyborde de lanimation xD un bras</figcaption>
+        </figure>
+      </a>
+      <a href="./assets/1656319995350.jpg">
+        <figure>
+          <img src="./assets/1656319995350.jpg" alt="" />
+          <figcaption>image du storyborde de lanimation xD un bras</figcaption>
+        </figure>
+      </a>
+      <a href="./assets/1656319995362.jpg">
+        <figure>
+          <img src="./assets/1656319995362.jpg" alt="" />
+          <figcaption>image du storyborde de lanimation xD un bras</figcaption>
+        </figure>
+      </a>
+      <a href="./assets/1656319995383.jpg">
+        <figure>
+          <img src="./assets/1656319995383.jpg" alt="" />
+          <figcaption>image du storyborde de lanimation xD un bras</figcaption>
+        </figure>
+      </a>
+      <a href="./assets/1656319995395.jpg">
+        <figure>
+          <img src="./assets/1656319995395.jpg" alt="" />
+          <figcaption>image du storyborde de lanimation xD un bras</figcaption>
+        </figure>
+      </a>
+      <a href="./assets/1656320377075.jpg">
+        <figure>
+          <img src="./assets/1656320377075.jpg" alt="" />
+          <figcaption>image du storyborde de lanimation xD un bras</figcaption>
+        </figure>
+      </a>
+      <a href="./assets/1656320377108.jpg">
+        <figure>
+          <img src="./assets/1656320377108.jpg" alt="" />
+          <figcaption>image du storyborde de lanimation xD un bras</figcaption>
+        </figure>
+      </a>
+      <a href="./assets/1656320377132.jpg">
+        <figure>
+          <img src="./assets/1656320377132.jpg" alt="" />
+          <figcaption>image du storyborde de lanimation xD un bras</figcaption>
+        </figure>
+      </a>
+      <a href="./assets/1656320377159.jpg">
+        <figure>
+          <img src="./assets/1656320377159.jpg" alt="" />
+          <figcaption>image du storyborde de lanimation xD un bras</figcaption>
+        </figure>
+      </a>
+      <a href="./assets/1656320377184.jpg">
+        <figure>
+          <img src="./assets/1656320377184.jpg" alt="" />
+          <figcaption>image du storyborde de lanimation xD un bras</figcaption>
+        </figure>
+      </a>
+      <a href="./assets/1656320377210.jpg">
+        <figure>
+          <img src="./assets/1656320377210.jpg" alt="" />
+          <figcaption>image du storyborde de lanimation xD un bras</figcaption>
+        </figure>
+      </a>
+      <a href="./assets/1656320377235.jpg">
+        <figure>
+          <img src="./assets/1656320377235.jpg" alt="" />
+          <figcaption>image du storyborde de lanimation xD un bras</figcaption>
+        </figure>
+      </a>
+      <a href="./assets/1656320377261.jpg">
+        <figure>
+          <img src="./assets/1656320377261.jpg" alt="" />
+          <figcaption>image du storyborde de lanimation xD un bras</figcaption>
+        </figure>
+      </a>
+      <a href="./assets/1656320377285.jpg">
+        <figure>
+          <img src="./assets/1656320377285.jpg" alt="" />
+          <figcaption>image du storyborde de lanimation xD un bras</figcaption>
+        </figure>
+      </a>
+      <a href="./assets/1656320377313.jpg">
+        <figure>
+          <img src="./assets/1656320377313.jpg" alt="" />
+          <figcaption>image du storyborde de lanimation xD un bras</figcaption>
+        </figure>
+      </a>
+      <a href="./assets/1656320377336.jpg">
+        <figure>
+          <img src="./assets/1656320377336.jpg" alt="" />
+          <figcaption>image du storyborde de lanimation xD un bras</figcaption>
+        </figure>
+      </a>
+      <a href="./assets/1656320377365.jpg">
+        <figure>
+          <img src="./assets/1656320377365.jpg" alt="" />
+          <figcaption>image du storyborde de lanimation xD un bras</figcaption>
+        </figure>
+      </a>
+      <a href="./assets/1656320377392.jpg">
+        <figure>
+          <img src="./assets/1656320377392.jpg" alt="" />
+          <figcaption>image du storyborde de lanimation xD un bras</figcaption>
+        </figure>
+      </a>
+      <a href="./assets/1656320377404.jpg">
+        <figure>
+          <img src="./assets/1656320377404.jpg" alt="" />
+          <figcaption>image du storyborde de lanimation xD un bras</figcaption>
+        </figure>
+      </a>
+      <a href="./assets/1656320377418.png">
+        <figure>
+          <img src="./assets/1656320377418.png" alt="" />
+          <figcaption>image du storyborde de lanimation xD un bras</figcaption>
+        </figure>
+      </a>
+      <a href="./assets/1656320446455.jpg">
+        <figure>
+          <img src="./assets/1656320446455.jpg" alt="" />
+          <figcaption>image du storyborde de lanimation xD un bras</figcaption>
+        </figure>
+      </a>
+      <a href="./assets/1656320446467.jpg">
+        <figure>
+          <img src="./assets/1656320446467.jpg" alt="" />
+          <figcaption>image du storyborde de lanimation xD un bras</figcaption>
+        </figure>
+      </a>
+      <a href="./assets/1656320446477.jpg">
+        <figure>
+          <img src="./assets/1656320446477.jpg" alt="" />
+          <figcaption>image du storyborde de lanimation xD un bras</figcaption>
+        </figure>
+      </a>
+      <a href="./assets/1656320446486.jpg">
+        <figure>
+          <img src="./assets/1656320446486.jpg" alt="" />
+          <figcaption>image du storyborde de lanimation xD un bras</figcaption>
+        </figure>
+      </a>
+      <a href="./assets/1656320446495.jpg">
+        <figure>
+          <img src="./assets/1656320446495.jpg" alt="" />
+          <figcaption>image du storyborde de lanimation xD un bras</figcaption>
+        </figure>
+      </a>
+    </main>
+  </body>
+</html>
